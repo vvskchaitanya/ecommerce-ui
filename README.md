@@ -1,2 +1,3 @@
-# ecommerce-ui
-Angular UI Project for Ecommerce
+# EcommereUi
+
+Ecommerce UI Project using Angular and Firebase
