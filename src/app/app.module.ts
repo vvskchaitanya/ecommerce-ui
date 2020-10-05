@@ -13,8 +13,9 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
-     AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
