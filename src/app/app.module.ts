@@ -6,10 +6,26 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { HeaderComponent } from './header/header.component';
+import { LoaderComponent } from './loader/loader.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CartComponent } from './cart/cart.component';
+import { SearchComponent } from './search/search.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    LoaderComponent,
+    HomeComponent,
+    LoginComponent,
+    DashboardComponent,
+    CartComponent,
+    SearchComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
