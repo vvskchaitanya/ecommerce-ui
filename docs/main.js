@@ -66,7 +66,7 @@ exports.environment = void 0;
 exports.environment = {
     production: false,
     firebase: {
-        apiKey: '<your-key>',
+        apiKey: 'AIzaSyAwu8fVmyT0BOnu7-sEDuI3UY7_jdIptKk',
         authDomain: '<your-project-authdomain>',
         databaseURL: '<your-database-URL>',
         projectId: '<your-project-id>',
@@ -163,6 +163,43 @@ AppComponent.ɵcmp = i0.ɵɵdefineComponent({ type: AppComponent, selectors: [["
 
 /***/ }),
 
+/***/ "W6KJ":
+/*!**********************************************!*\
+  !*** ./src/app/profile/profile.component.ts ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProfileComponent = void 0;
+const core_1 = __webpack_require__(/*! @angular/core */ "fXoL");
+const i0 = __webpack_require__(/*! @angular/core */ "fXoL");
+class ProfileComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+exports.ProfileComponent = ProfileComponent;
+ProfileComponent.ɵfac = function ProfileComponent_Factory(t) { return new (t || ProfileComponent)(); };
+ProfileComponent.ɵcmp = i0.ɵɵdefineComponent({ type: ProfileComponent, selectors: [["app-profile"]], decls: 2, vars: 0, template: function ProfileComponent_Template(rf, ctx) { if (rf & 1) {
+        i0.ɵɵelementStart(0, "p");
+        i0.ɵɵtext(1, "profile works!");
+        i0.ɵɵelementEnd();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2ZpbGUvcHJvZmlsZS5jb21wb25lbnQubGVzcyJ9 */"] });
+/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(ProfileComponent, [{
+        type: core_1.Component,
+        args: [{
+                selector: 'app-profile',
+                templateUrl: './profile.component.html',
+                styleUrls: ['./profile.component.less']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
 /***/ "ZAI4":
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
@@ -189,6 +226,7 @@ const dashboard_component_1 = __webpack_require__(/*! ./dashboard/dashboard.comp
 const cart_component_1 = __webpack_require__(/*! ./cart/cart.component */ "c2A7");
 const search_component_1 = __webpack_require__(/*! ./search/search.component */ "tq2C");
 const footer_component_1 = __webpack_require__(/*! ./footer/footer.component */ "fp1T");
+const profile_component_1 = __webpack_require__(/*! ./profile/profile.component */ "W6KJ");
 const i0 = __webpack_require__(/*! @angular/core */ "fXoL");
 const i1 = __webpack_require__(/*! @angular/fire */ "spgP");
 class AppModule {
@@ -209,7 +247,8 @@ AppModule.ɵinj = i0.ɵɵdefineInjector({ factory: function AppModule_Factory(t)
         dashboard_component_1.DashboardComponent,
         cart_component_1.CartComponent,
         search_component_1.SearchComponent,
-        footer_component_1.FooterComponent], imports: [platform_browser_1.BrowserModule,
+        footer_component_1.FooterComponent,
+        profile_component_1.ProfileComponent], imports: [platform_browser_1.BrowserModule,
         forms_1.FormsModule,
         app_routing_module_1.AppRoutingModule, i1.AngularFireModule] }); })();
 /*@__PURE__*/ (function () { i0.ɵsetClassMetadata(AppModule, [{
@@ -224,7 +263,8 @@ AppModule.ɵinj = i0.ɵɵdefineInjector({ factory: function AppModule_Factory(t)
                     dashboard_component_1.DashboardComponent,
                     cart_component_1.CartComponent,
                     search_component_1.SearchComponent,
-                    footer_component_1.FooterComponent
+                    footer_component_1.FooterComponent,
+                    profile_component_1.ProfileComponent
                 ],
                 imports: [
                     platform_browser_1.BrowserModule,
